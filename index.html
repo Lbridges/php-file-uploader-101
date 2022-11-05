@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Form</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 8px;
+        }
+        #upload_input {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+   <h1>Image Upload Form</h1> 
+    <form action="scripts/upload_product_img.php" method="post" enctype="multipart/form-data">
+        <label for="product_upload">Upload File</label><br/>
+        <input required type="file" name="product_upload" id="upload_input"><br/>
+        <input type="submit" name="upload_btn">
+    </form>
+</body>
+</html>
